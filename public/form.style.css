@@ -1,0 +1,141 @@
+#task-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 44px;
+}
+
+#task-input {
+  width: 100%;
+  padding: 5px;
+  border: #ccc 1px solid;
+  border-radius: 8px 0 0 8px;
+}
+
+#task-form button {
+  border: none;
+  font-size: 14px;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+  background-color: #6a1b9a;
+  color: white;
+  cursor: pointer;
+}
+
+#task-form button:hover {
+  background-color: #4a148c;
+}
+
+#task-list {
+  margin: 20px auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e1bee7;
+  border: 1px solid #ba68c8;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#task-list div {
+  display: flex;
+  gap: 4px;
+}
+
+#task-list div button.edit {
+  font-size: 12px;
+  background-color: #9a4dff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#task-list div button.edit:hover {
+  background-color: #7c3cff;
+}
+
+#task-list div button.delete {
+  font-size: 12px;
+  background-color: #8e24aa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#task-list div button.delete:hover {
+  background-color: #6a1b9a;
+}
+
+#task-list li.deleted {
+  background-color: #9d8ba0;
+  border: 1px solid #6e5f71;
+}
+
+#task-list li.deleted button.delete {
+  background-color: #acacac;
+}
+
+#task-list li.completed > p {
+  text-decoration: line-through;
+}
+
+#task-list li.deleted > p {
+  text-decoration: line-through;
+  color: #880e4f !important;
+}
+
+#task-list li.deleted div button.delete:hover {
+  background-color: #acacac;
+}
+
+#task-name {
+  margin: 0;
+  color: #525252;
+  line-height: 1.5;
+}
+
+/* Custom checkbox */
+.task-checkbox {
+  display: none;
+}
+
+.task-checkbox + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.task-checkbox + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #9A4DFF;
+  border-radius: 50%;
+  background: white;
+}
+
+.task-checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  width: 8px;
+  height: 14px;
+  border: solid #9A4DFF;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

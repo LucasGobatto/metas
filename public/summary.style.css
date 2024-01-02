@@ -1,0 +1,90 @@
+#summary {
+  margin: 20px auto;
+}
+
+.action-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+table {
+  margin: 20px auto;
+  padding: 5px;
+  border: #6a1b9a 1px solid;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #e1bee7;
+}
+
+thead {
+  background-color: #8e24aa;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  width: 150px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #525252;
+}
+
+th {
+  color: white;
+}
+
+th#first {
+  border-radius: 8px 0 0 8px;
+}
+
+th#last {
+  border-radius: 0 8px 8px 0;
+}
+
+table button.delete {
+  font-size: 12px;
+  background-color: #ff1744;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+table button.delete:hover {
+  background-color: #f44336;
+}
+
+table button.edit {
+  font-size: 12px;
+  background-color: #9a4dff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+table button.edit:hover {
+  background-color: #7c3cff;
+}
+
+table span {
+  width: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+table span.active {
+  background-color: #4caf50;
+}
+
+table span.inactive {
+  background-color: #ff9800;
+}

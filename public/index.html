@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metas diárias</title>
+    <link rel="stylesheet" href="./toggle.style.css" />
+    <link rel="stylesheet" href="./global.style.css" />
+    <link rel="stylesheet" href="./summary.style.css" />
+    <link rel="stylesheet" href="./form.style.css" />
+  </head>
+  <body>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Nova meta diária" />
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="task-list"></ul>
+    <div id="summary"></div>
+  </body>
+  <script src="strings.js"></script>
+  <script src="./utils.js"></script>
+  <script src="./local-storage.service.js"></script>
+  <script src="./task-list.js"></script>
+  <script src="./summary.js"></script>
+  <script src="./index.js"></script>
+</html>
