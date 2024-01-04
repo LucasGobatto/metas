@@ -1,0 +1,11 @@
+# Set your project ID
+export PROJECT_ID=your-project-id
+
+# Build your Docker image
+docker build -t gcr.io/$PROJECT_ID/metas-server .
+
+# Push it to Google Container Registry
+docker push gcr.io/$PROJECT_ID/metas-server
+
+# Deploy it to Cloud Run
+gcloud run deploy server --image gcr.io/$PROJECT_ID/metas-server --region us-central1 --platform managed
